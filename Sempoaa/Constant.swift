@@ -26,4 +26,8 @@ struct Constant {
     struct Color {
         static let black = "454a51"
     }
+    
+    struct Hero {
+        static let background = "Thor"
+    }
 }

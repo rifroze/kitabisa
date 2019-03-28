@@ -53,6 +53,8 @@ extension MainViewController: FSPagerViewDataSource {
     func pagerView(_ pagerView: FSPagerView, cellForItemAt index: Int) -> FSPagerViewCell {
         let cell = pagerView.dequeueReusableCell(withReuseIdentifier: Constant.Cell.main, at: index) as! MainCell
         cell.setData(card: cards[index])
+        cell.viewBackground.hero.id = Constant.Hero.background
+        
         return cell
     }
     

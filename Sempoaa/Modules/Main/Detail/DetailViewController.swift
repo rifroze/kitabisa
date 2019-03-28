@@ -43,6 +43,7 @@ class DetailViewController: UIViewController {
     
     private func initialize() {
         lblTitle.text = card.title
+        viewContainer.hero.id = Constant.Hero.background
         viewContainer.backgroundColor = UIColor(card.backgroundColor)
         adjustLayout()
     }
