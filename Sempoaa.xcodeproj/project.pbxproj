@@ -168,7 +168,6 @@
 		CD461984224BB3DE00B1ABBE /* DetailInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailInteractor.swift; sourceTree = "<group>"; };
 		CD461985224BB3DE00B1ABBE /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		CD461993224BD57600B1ABBE /* UITextField+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Extensions.swift"; sourceTree = "<group>"; };
-		CD4619A0224C600300B1ABBE /* SempoaaTests copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "SempoaaTests copy-Info.plist"; path = "/Users/nawidodo/Development/iOS/Test/Sempoaa/SempoaaTests copy-Info.plist"; sourceTree = "<absolute>"; };
 		CD8DC361224AAB7800C04336 /* Sempoaa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sempoaa.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD8DC364224AAB7800C04336 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD8DC369224AAB7800C04336 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -356,7 +355,6 @@
 				CD8DC378224AAB7B00C04336 /* SempoaaTests */,
 				CD8DC383224AAB7B00C04336 /* SempoaaUITests */,
 				CD8DC362224AAB7800C04336 /* Products */,
-				CD4619A0224C600300B1ABBE /* SempoaaTests copy-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
