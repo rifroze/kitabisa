@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="MainCell" customModule="Sempoaa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="319" height="355"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="319" height="355"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZZk-Xn-GW6" userLabel="viewBackground">
+                        <rect key="frame" x="0.0" y="44" width="319" height="277"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kxb-C2-jL8">
+                                <rect key="frame" x="0.0" y="0.0" width="319" height="277"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Open" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lNk-oa-Mf5">
+                                        <rect key="frame" x="217" y="213.5" width="70" height="33"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="3RO-vr-i3P"/>
+                                            <constraint firstAttribute="height" constant="33" id="Jiq-Od-0pm"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="17"/>
+                                        <nil key="highlightedColor"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="5"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sum" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jfk-yX-yDQ">
+                                        <rect key="frame" x="32" y="215" width="56.5" height="30"/>
+                                        <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="26"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon_atom" translatesAutoresizingMaskIntoConstraints="NO" id="ebK-5r-Q3a">
+                                        <rect key="frame" x="95.5" y="42.5" width="128" height="128"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="128" id="6oc-Dw-va6"/>
+                                            <constraint firstAttribute="height" constant="128" id="qsc-qr-yKa"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="lNk-oa-Mf5" firstAttribute="centerY" secondItem="Jfk-yX-yDQ" secondAttribute="centerY" id="56F-Pj-nVT"/>
+                                    <constraint firstItem="ebK-5r-Q3a" firstAttribute="centerX" secondItem="Kxb-C2-jL8" secondAttribute="centerX" id="570-Ew-ImC"/>
+                                    <constraint firstItem="Jfk-yX-yDQ" firstAttribute="leading" secondItem="Kxb-C2-jL8" secondAttribute="leading" constant="32" id="CR8-Pu-1xN"/>
+                                    <constraint firstItem="ebK-5r-Q3a" firstAttribute="centerY" secondItem="Kxb-C2-jL8" secondAttribute="centerY" constant="-32" id="FgU-Xy-J4z"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jfk-yX-yDQ" secondAttribute="bottom" constant="32" id="HGv-Z7-Zpi"/>
+                                    <constraint firstAttribute="trailing" secondItem="lNk-oa-Mf5" secondAttribute="trailing" constant="32" id="h9o-LO-FSG"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Kxb-C2-jL8" secondAttribute="trailing" id="D6K-Jg-hPR"/>
+                            <constraint firstItem="Kxb-C2-jL8" firstAttribute="leading" secondItem="ZZk-Xn-GW6" secondAttribute="leading" id="WZl-On-NEh"/>
+                            <constraint firstAttribute="bottom" secondItem="Kxb-C2-jL8" secondAttribute="bottom" id="XRW-jJ-3ym"/>
+                            <constraint firstItem="Kxb-C2-jL8" firstAttribute="top" secondItem="ZZk-Xn-GW6" secondAttribute="top" id="tJF-bg-l8w"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstItem="ZZk-Xn-GW6" firstAttribute="bottom" secondItem="ZTg-uK-7eu" secondAttribute="bottom" id="0et-KC-Tre"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="ZZk-Xn-GW6" secondAttribute="trailing" id="ayA-Vh-uJ3"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="top" secondItem="ZZk-Xn-GW6" secondAttribute="top" id="dF6-50-Buv"/>
+                <constraint firstItem="ZZk-Xn-GW6" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" id="mc9-fW-9e4"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="319" height="355"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                    <real key="value" value="10"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="2"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="1"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="1" height="1"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="imgBanner" destination="ebK-5r-Q3a" id="08e-42-8m5"/>
+                <outlet property="lblOpen" destination="lNk-oa-Mf5" id="NFe-SV-vcR"/>
+                <outlet property="lblTitle" destination="Jfk-yX-yDQ" id="OqV-AZ-wRs"/>
+                <outlet property="viewBackground" destination="ZZk-Xn-GW6" id="r2h-I4-dV6"/>
+                <outlet property="viewContainer" destination="Kxb-C2-jL8" id="6ml-tH-IQk"/>
+            </connections>
+            <point key="canvasLocation" x="145.6521739130435" y="104.12946428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="icon_atom" width="124" height="110.5"/>
+    </resources>
+</document>

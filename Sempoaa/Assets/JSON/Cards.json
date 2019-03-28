@@ -1,0 +1,26 @@
+[
+    {
+      "title": "Sum",
+      "type": "sum",
+      "backgroundColor": "e64141",
+      "backgroundImage": "icon_atom"
+    },
+    {
+      "title": "Multiply",
+      "type": "multiply",
+      "backgroundColor": "00bc71",
+      "backgroundImage": "icon_solar_system"
+    },
+    {
+      "title": "Prime",
+      "type": "prime",
+      "backgroundColor": "459ffb",
+      "backgroundImage": "icon_globe"
+    },
+    {
+      "title": "Fibonacci",
+      "type": "fibonacci",
+      "backgroundColor": "454a51",
+      "backgroundImage": "icon_molecular"
+    }
+  ]

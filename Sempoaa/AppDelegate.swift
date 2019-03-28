@@ -16,6 +16,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        let cards = FileUtility.readCards(withName: "Cards")
+        let mainController = MainRouter.createModule(cards: cards)
+        let rootController = UINavigationController(rootViewController: mainController)
+        window = UIWindow(frame: UIScreen.main.bounds)
+        window?.rootViewController = rootController
+        window?.makeKeyAndVisible()
+        
         return true
     }
 
