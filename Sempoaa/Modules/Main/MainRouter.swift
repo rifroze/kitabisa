@@ -11,7 +11,6 @@ import UIKit
 class MainRouter: NSObject, MainWireframeProtocol {
     
     private let animationController = DAExpandAnimation()
-    let transition = BubbleTransition()
     
     weak var viewController: UIViewController?
     var card: CardType!

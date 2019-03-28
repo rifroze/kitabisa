@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		CD40D288224CC94B002BA8A4 /* DAExpandAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40D287224CC94A002BA8A4 /* DAExpandAnimation.swift */; };
-		CD40D28A224CCC19002BA8A4 /* BubbleTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD40D289224CCC18002BA8A4 /* BubbleTransition.swift */; };
 		CD461986224BB3DE00B1ABBE /* DetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD461980224BB3DE00B1ABBE /* DetailPresenter.swift */; };
 		CD461987224BB3DE00B1ABBE /* DetailRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD461981224BB3DE00B1ABBE /* DetailRouter.swift */; };
 		CD461988224BB3DE00B1ABBE /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD461982224BB3DE00B1ABBE /* DetailViewController.swift */; };
@@ -67,7 +66,6 @@
 
 /* Begin PBXFileReference section */
 		CD40D287224CC94A002BA8A4 /* DAExpandAnimation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DAExpandAnimation.swift; sourceTree = "<group>"; };
-		CD40D289224CCC18002BA8A4 /* BubbleTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTransition.swift; sourceTree = "<group>"; };
 		CD461980224BB3DE00B1ABBE /* DetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailPresenter.swift; sourceTree = "<group>"; };
 		CD461981224BB3DE00B1ABBE /* DetailRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailRouter.swift; sourceTree = "<group>"; };
 		CD461982224BB3DE00B1ABBE /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -214,7 +212,6 @@
 		CDBC4238224B941500626F0A /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CD40D289224CCC18002BA8A4 /* BubbleTransition.swift */,
 				CD40D287224CC94A002BA8A4 /* DAExpandAnimation.swift */,
 				CDBC423D224B958900626F0A /* FileUtility.swift */,
 			);
@@ -440,7 +437,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD40D28A224CCC19002BA8A4 /* BubbleTransition.swift in Sources */,
 				CD461987224BB3DE00B1ABBE /* DetailRouter.swift in Sources */,
 				CDD9525D224B47FC009BE98D /* UIView+Extensions.swift in Sources */,
 				CDD9523C224B3A7C009BE98D /* MainProtocols.swift in Sources */,
