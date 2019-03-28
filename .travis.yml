@@ -1,5 +1,4 @@
 language: swift
-osx_image: xcode10.1
-
-script:
-- xcodebuild test -project Sempoaa.xcodeproj -scheme Sempoaa -sdk iphonesimulator
+xcode_project: Sempoaa.xcodeproj # path to your xcodeproj folder
+xcode_scheme: Sempoaa
+xcode_destination: platform=iOS Simulator,OS=11.3,name=iPhone X
