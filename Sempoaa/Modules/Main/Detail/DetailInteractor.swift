@@ -42,7 +42,9 @@ class DetailInteractor: DetailInteractorProtocol {
             
             initial = initial + 1
         }
-        
+        if first < 4 {
+            primes = Array(primes.prefix(first))
+        }
         return primes.joined(separator: ", ")
     }
     
@@ -53,6 +55,9 @@ class DetailInteractor: DetailInteractorProtocol {
             let limit = fibs.count - 1
             let newVal = fibs[limit] + fibs[limit-1]
             fibs.append(newVal)
+        }
+        if first < 2 {
+            fibs = Array(fibs.prefix(first))
         }
         let sfibs = fibs.map { "\($0)" }.joined(separator: ", ")
         return sfibs
