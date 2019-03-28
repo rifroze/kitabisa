@@ -8,9 +8,13 @@
 
 import UIKit
 
-class MainRouter: MainWireframeProtocol {
+class MainRouter: NSObject, MainWireframeProtocol {
+    
+    private let animationController = DAExpandAnimation()
+    let transition = BubbleTransition()
     
     weak var viewController: UIViewController?
+    var card: CardType!
     
     static func createModule(cards: [CardType]) -> UIViewController {
         // Change to get view from storyboard if not using progammatic UI
@@ -27,7 +31,16 @@ class MainRouter: MainWireframeProtocol {
     }
     
     func openDetail(withCard card: CardType) {
+        self.card = card
         let vc = DetailRouter.createModule(card: card)
+        vc.transitioningDelegate = self
+        vc.modalPresentationStyle = .custom
         viewController?.present(vc, animated: true, completion: nil)
     }
+}
+
+extension MainRouter: UIViewControllerTransitioningDelegate {
+    func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+        return animationController
+    }    
 }
