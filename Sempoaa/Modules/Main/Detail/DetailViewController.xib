@@ -16,7 +16,6 @@
                 <outlet property="lblOperator" destination="GVp-xG-CZN" id="BcQ-kC-OUA"/>
                 <outlet property="lblTitle" destination="E2V-0v-ozk" id="IhI-IF-LR7"/>
                 <outlet property="tfFirstInput" destination="np7-jA-mbN" id="r7l-o7-LS3"/>
-                <outlet property="tfOutput" destination="DuP-8t-fYI" id="3Rh-x8-ftz"/>
                 <outlet property="tfSecondInput" destination="Jch-HB-fyV" id="mm5-Yv-3Ba"/>
                 <outlet property="tvOutput" destination="hlD-TE-eAN" id="vew-IZ-Ny9"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -32,7 +31,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UPX-Gk-KvA">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-IB-OEj">
+                        <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Azx-IB-OEj">
                             <rect key="frame" x="0.0" y="87" width="375" height="92"/>
                             <subviews>
                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="np7-jA-mbN">
@@ -114,13 +113,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BFr-VM-2cV">
                             <rect key="frame" x="0.0" y="179" width="375" height="488"/>
                             <subviews>
-                                <textField opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="top" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DuP-8t-fYI">
-                                    <rect key="frame" x="32" y="16" width="311" height="380"/>
-                                    <nil key="textColor"/>
-                                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
-                                    <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
-                                </textField>
-                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-TE-eAN">
+                                <textView hidden="YES" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hlD-TE-eAN">
                                     <rect key="frame" x="32" y="16" width="311" height="380"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -131,7 +124,7 @@
                                         </userDefinedRuntimeAttribute>
                                     </userDefinedRuntimeAttributes>
                                 </textView>
-                                <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-PV-fbm">
+                                <button hidden="YES" opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DvC-PV-fbm">
                                     <rect key="frame" x="32" y="412" width="311" height="60"/>
                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     <constraints>
@@ -154,16 +147,12 @@
                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <constraints>
                                 <constraint firstAttribute="bottom" secondItem="DvC-PV-fbm" secondAttribute="bottom" constant="16" id="Dnf-xR-Tkc"/>
-                                <constraint firstItem="DvC-PV-fbm" firstAttribute="top" secondItem="DuP-8t-fYI" secondAttribute="bottom" constant="16" id="JHf-Ul-A3R"/>
                                 <constraint firstItem="DvC-PV-fbm" firstAttribute="leading" secondItem="BFr-VM-2cV" secondAttribute="leading" constant="32" id="Map-7k-Zq5"/>
                                 <constraint firstItem="DvC-PV-fbm" firstAttribute="top" secondItem="hlD-TE-eAN" secondAttribute="bottom" constant="16" id="SDE-Hc-zEZ"/>
                                 <constraint firstItem="hlD-TE-eAN" firstAttribute="top" secondItem="BFr-VM-2cV" secondAttribute="top" constant="16" id="U4Q-Lj-QrO"/>
-                                <constraint firstItem="DuP-8t-fYI" firstAttribute="leading" secondItem="BFr-VM-2cV" secondAttribute="leading" constant="32" id="XZs-f1-iEh"/>
                                 <constraint firstAttribute="trailing" secondItem="DvC-PV-fbm" secondAttribute="trailing" constant="32" id="Zmd-sk-es2"/>
                                 <constraint firstAttribute="trailing" secondItem="hlD-TE-eAN" secondAttribute="trailing" constant="32" id="dZo-QF-T6Q"/>
-                                <constraint firstItem="DuP-8t-fYI" firstAttribute="top" secondItem="BFr-VM-2cV" secondAttribute="top" constant="16" id="g8g-4b-O7f"/>
                                 <constraint firstItem="hlD-TE-eAN" firstAttribute="leading" secondItem="BFr-VM-2cV" secondAttribute="leading" constant="32" id="n6G-1H-c6f"/>
-                                <constraint firstAttribute="trailing" secondItem="DuP-8t-fYI" secondAttribute="trailing" constant="32" id="siX-Dk-8aG"/>
                             </constraints>
                         </view>
                     </subviews>

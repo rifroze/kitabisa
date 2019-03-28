@@ -17,7 +17,6 @@ class DetailViewController: UIViewController {
     @IBOutlet weak var tfFirstInput: UITextField!
     @IBOutlet weak var tfSecondInput: UITextField!
     @IBOutlet weak var tvOutput: UITextView!
-    @IBOutlet weak var tfOutput: UITextField!
     @IBOutlet weak var btnCalculate: UIButton!
     @IBOutlet weak var firstInputTrailling: NSLayoutConstraint!
     
@@ -41,6 +40,13 @@ class DetailViewController: UIViewController {
         self.initialize()
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        UIView.animate(withDuration: 1, delay: 1, usingSpringWithDamping: 0.5, initialSpringVelocity: 5, options: .curveEaseInOut, animations: {
+        }) { _ in
+            self.hideProps(false)
+        }
+    }
+    
     private func initialize() {
         lblTitle.text = card.title
         viewContainer.hero.id = Constant.Hero.background
@@ -62,6 +68,13 @@ class DetailViewController: UIViewController {
             lblOperator.isHidden = true
             tfSecondInput.isHidden = true
         }
+    }
+    
+    private func hideProps(_ isHidden: Bool) {
+        lblTitle.isHidden = isHidden
+        viewTopContainer.isHidden = isHidden
+        tvOutput.isHidden = isHidden
+        btnCalculate.isHidden = isHidden
     }
     
     init(card: CardType) {

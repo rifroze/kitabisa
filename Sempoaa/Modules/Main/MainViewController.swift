@@ -11,6 +11,7 @@ import UIKit
 class MainViewController: UIViewController, MainViewProtocol {
     
     var cards: [CardType]
+    var selectedCell: MainCell?
     
     @IBOutlet weak var pagerView: FSPagerView! {
         didSet {
@@ -37,12 +38,17 @@ class MainViewController: UIViewController, MainViewProtocol {
         self.initialize()
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        selectedCell?.hideProps(false)
+    }
+    
     private func initialize() {
         self.navigationController?.navigationBar.barTintColor = .white
         self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default)
         self.navigationController?.navigationBar.shadowImage = UIImage()
         self.title = Constant.App.name
     }
+    
 }
 
 extension MainViewController: FSPagerViewDataSource {
@@ -63,6 +69,9 @@ extension MainViewController: FSPagerViewDataSource {
 extension MainViewController: FSPagerViewDelegate {
     func pagerView(_ pagerView: FSPagerView, didSelectItemAt index: Int) {
         print("didSelectItemAt: \(index)")
+        guard let cell = pagerView.cellForItem(at: index) as? MainCell else {return}
+        cell.hideProps(true)
+        selectedCell = cell
         presenter?.openDetail(withCard: cards[index])
     }
 }

@@ -26,4 +26,10 @@ class MainCell: FSPagerViewCell {
         self.lblTitle.text = card.title
         self.imgBanner.image = UIImage(named: card.backgroundImage)
     }
+    
+    func hideProps(_ isHidden: Bool) {
+        imgBanner.isHidden = isHidden
+        lblOpen.isHidden = isHidden
+        lblTitle.isHidden = isHidden
+    }
 }
